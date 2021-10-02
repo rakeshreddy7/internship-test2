@@ -1,0 +1,4 @@
+import numpy as n
+import pandas as p
+myfile=p.read_csv("question2.csv")
+myfile.groupby('occupation')['age'].agg(['min','max'])
