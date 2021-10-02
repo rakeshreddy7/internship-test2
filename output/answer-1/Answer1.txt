@@ -1,0 +1,4 @@
+import pandas as p
+d=p.read_csv("question1.csv")
+d1=d.groupby((d['Year']//10)*10).sum()
+d1.head()
