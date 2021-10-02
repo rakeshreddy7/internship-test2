@@ -1,0 +1,6 @@
+import numpy as n
+import pandas as p
+myfile=p.read_csv("question3.csv")
+grp=myfile.groupby('Team').sum()
+grp=grp.sort_values(['Red Cards', 'Yellow Cards'],ascending=False)
+grp.iloc[:,-5:-3]
